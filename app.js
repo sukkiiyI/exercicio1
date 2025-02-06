@@ -1,12 +1,12 @@
 alert("Boas vindas ao jogo do número secreto");
-let numeroSecreto = 19;
+let numeroSecreto = Math.floor(Math.random()*30)+1;
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
 
 // enquanto chute não for igual a 19
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número de 1 a 30');
+    chute = prompt('Escolha um número de 1 a 30 ');
     // se chute for igual ao número secreto
     if (chute == numeroSecreto) {
         break;
